@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <stdbool.h>
+
+#define EXIT_SUCCESS 0
+#define EXIT_FAILURE 1
+
+int main(int argc, char *argv[])
+{
+  int i;
+
+  for (i = 1; i < argc; i++) {
+    printf("%s%s", argv[i], (i < argc - 1) ? " " : "");
+  }
+  puts("");
+  return EXIT_SUCCESS;
+}
